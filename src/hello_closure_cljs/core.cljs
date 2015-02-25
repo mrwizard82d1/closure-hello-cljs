@@ -11,9 +11,8 @@
 
 (defn say-hi []
   (let [new-header 
-        (dom/createDom "h1" 
-                       #js {:style 
-                            #js {:backgroundColor "#eee"}}
+        (dom/createDom "h1"
+                       #js {:style "background-color:#EEE"}
                        "Hello Closure World!")]
     (println "Where am I?")
     (dom/appendChild (.-body js/document) new-header)))
